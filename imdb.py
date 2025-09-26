@@ -94,7 +94,7 @@ def plot_learning_curve(model, X, y, title="Learning Curve"):
     plt.plot(train_sizes, train_mean, 'o-', color="blue", label="Training accuracy")
     plt.fill_between(train_sizes, train_mean - train_std, train_mean + train_std, alpha=0.1, color="blue")
 
-    plt.plot(train_sizes, val_mean, 'o-', color="green", label="Validation accuracy")
+    plt.plot(train_sizes, val_mean, 'o-', color="black", label="Validation accuracy")
     plt.fill_between(train_sizes, val_mean - val_std, val_mean + val_std, alpha=0.1, color="green")
 
     plt.title(title)
@@ -123,5 +123,6 @@ print(f"Random Forest Prediction: {'Positive' if pred_rf==1 else 'Negative'}")
 
 pred_lr = log_reg.predict(user_vec)[0]
 print(f"Logistic Regression Prediction: {'Positive' if pred_lr==1 else 'Negative'}")
+
 
 
