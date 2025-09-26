@@ -1,6 +1,6 @@
 # IMDB-movie-analyzer
 A movie sentiment analyzer using a machine learning model
-Main programming language used:Python
+# Main programming language used:Python
 Key libraries imported:
 1)Scikit learn
 2)Pandas
